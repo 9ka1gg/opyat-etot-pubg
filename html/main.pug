@@ -1,0 +1,22 @@
+mixin topic-card(type, topic, image)
+    .main__card
+        .main__card-img
+            img.main__card-picture(src=image alt='Изображения')
+        .main__card-type=type
+        .main__card-topic=topic
+        .main__card-user
+            span.main__card-author мухаммед
+            span.main__card-date January 1, 2025
+            span.main__card-views 100K Views
+        .main__card-description lorem ipsum
+main
+    .main
+        +topic-card('type1', 'topic1', '../media/png/1.png')
+        +topic-card('type1', 'topic1', '../media/png/2.png')
+        +topic-card('type1', 'topic1', '../media/png/3.png')
+        +topic-card('type1', 'topic1', '../media/png/4.png')
+        +topic-card('type1', 'topic1', '../media/png/5.png')
+        +topic-card('type1', 'topic1', '../media/png/6.png')
+        +topic-card('type1', 'topic1', '../media/png/7.png')
+        +topic-card('type1', 'topic1', '../media/png/8.png')
+        +topic-card('type1', 'topic1', '../media/png/9.png')
